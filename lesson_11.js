@@ -131,42 +131,42 @@
 console.log(functionName());
  */
 // #2: Function Expression
-const myFunction = function () {
-  // Your logic here
-  return "Function Expression";
-}
+// const myFunction = function () {
+//   // Your logic here
+//   return "Function Expression";
+// }
 
-// #3: Arrow Function
-const newFunction = () => {
-  // Your logic here
-  return "Arrow Function";
-}
-console.log(newFunction());
+// // #3: Arrow Function
+// const newFunction = () => {
+//   // Your logic here
+//   return "Arrow Function";
+// }
+// console.log(newFunction());
 
 
-// Map in JavaScript. Map is a predefined JS function that is used to transform each value in an array and return a new array with the transformed values.
+// // Map in JavaScript. Map is a predefined JS function that is used to transform each value in an array and return a new array with the transformed values.
 
-// Multiplying each value by 2 in the original array
+// // Multiplying each value by 2 in the original array
 
-const nums = [2, 8, 19, 12, 13]; // mapping to each value of array
+// const nums = [2, 8, 19, 12, 13]; // mapping to each value of array
 
-// Passed function is an anonymous function
-const result = nums.map(function(value, index) {
-  return index * 2;
-});
+// // Passed function is an anonymous function
+// const result = nums.map(function(value, index) {
+//   return index * 2;
+// });
 
-// Passed function is an arrow function;
-const result2 = nums.map((value, index) => {
-  return value ** 2;
-});
+// // Passed function is an arrow function;
+// const result2 = nums.map((value, index) => {
+//   return value ** 2;
+// });
 
-// Omitting return statement
-const result4 = nums.map((value, index) => value ** 2);
+// // Omitting return statement
+// const result4 = nums.map((value, index) => value ** 2);
 
-// Simplifying the arrow function; no return statement if one-liner
-const result3 = nums.map((val, idx) => val - 1); // Under the hood, it understands that one-liner is has a return statement.
+// // Simplifying the arrow function; no return statement if one-liner
+// const result3 = nums.map((val, idx) => val - 1); // Under the hood, it understands that one-liner is has a return statement.
 
-console.log(result3); //  [1, 7, 18, 11, 12] transformed values
+// console.log(result3); //  [1, 7, 18, 11, 12] transformed values
 
 
 // Question #2: Create an arrow function that accepts an array of strings and returns a resulting array containing values from the original array that are transformed.
@@ -174,15 +174,26 @@ console.log(result3); //  [1, 7, 18, 11, 12] transformed values
 // Output: ["Hello Rafi", "Hello John", "Hello Elyash"]
 
 
-const strs = ["Rafi", "John", "Elyash"]
-console.log(greetEveryone(strs));
+// const strs = ["Rafi", "John", "Elyash"]
+// console.log(greetEveryone(strs));
 
 // Question #3: Given an array of temperatures in celsius, return a transformed array with temperatures converted into fahrenheit.
-// Input: [0, 12, 30, 29, 16] : celsius
+const arr = [0, 12, 30, 29, 16];
 // Output: [32, 53.6, 86, 84.2, 60.8] : fahrenheit
 // Formula: fahrenheit = (celsius * 9 / 5) + 32
 
+// const fahrenheit = str.map((ele, idx) => (ele * 9 / 5) + 32);
+// console.log(fahrenheit);
 
+// const arr (ele, idx)
+function convertToFahrenheit(arr) {
+  const fahrenheit = arr.map((ele, idx) => {
+    return (ele * 9 / 5) + 32;
+  }); 
+  return fahrenheit;
+}
+  console.log(convertToFahrenheit (arr));
+  
 // Question #4: Write a function that extracts the names from an array of objects representing people.
 /*
   Input: const people = [
