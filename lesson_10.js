@@ -53,33 +53,4 @@
   }
 
   console.log(getFamilyInformation (Family));  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* const a = 10; // typeof a => number
-  const b = "10"; // typeof b => string
-  
-  console.log("Checking type of a: ", typeof a);
-  console.log("Checking type of b: ", typeof b);
-  
-  console.log("Only checking values: ", a == b); // true
-  console.log("Checking values as well as data types", a === b); // false */
+ 
