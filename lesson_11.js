@@ -131,33 +131,37 @@
 console.log(functionName());
  */
 // #2: Function Expression
-/* const myFunction = function () {
+const myFunction = function () {
   // Your logic here
   return "Function Expression";
-} */
+}
 
 // #3: Arrow Function
-/* const newFunction = () => {
+const newFunction = () => {
   // Your logic here
   return "Arrow Function";
 }
 console.log(newFunction());
-*/
+
 
 // Map in JavaScript. Map is a predefined JS function that is used to transform each value in an array and return a new array with the transformed values.
 
 // Multiplying each value by 2 in the original array
 
-const nums = [2, 8, 19, 12, 13];
+const nums = [2, 8, 19, 12, 13]; // mapping to each value of array
+
 // Passed function is an anonymous function
-const result = nums.map(function Munna(value, index) {
+const result = nums.map(function(value, index) {
   return index * 2;
 });
 
-// Passed function is an arrow function
+// Passed function is an arrow function;
 const result2 = nums.map((value, index) => {
   return value ** 2;
 });
+
+// Omitting return statement
+const result4 = nums.map((value, index) => value ** 2);
 
 // Simplifying the arrow function; no return statement if one-liner
 const result3 = nums.map((val, idx) => val - 1); // Under the hood, it understands that one-liner is has a return statement.
@@ -170,7 +174,29 @@ console.log(result3); //  [1, 7, 18, 11, 12] transformed values
 // Output: ["Hello Rafi", "Hello John", "Hello Elyash"]
 
 
-
-
 const strs = ["Rafi", "John", "Elyash"]
 console.log(greetEveryone(strs));
+
+// Question #3: Given an array of temperatures in celsius, return a transformed array with temperatures converted into fahrenheit.
+// Input: [0, 12, 30, 29, 16] : celsius
+// Output: [32, 53.6, 86, 84.2, 60.8] : fahrenheit
+// Formula: fahrenheit = (celsius * 9 / 5) + 32
+
+
+// Question #4: Write a function that extracts the names from an array of objects representing people.
+/*
+  Input: const people = [
+    { name: 'Alice', age: 22 },
+    { name: 'Bob', age: 17 },
+    { name: 'Charlie', age: 30 }
+  ];
+
+  Output: ['Alice', 'Bob', 'Charlie']
+
+*/
+
+// Question #5: Write a function to convert all strings in an array to uppercase.
+/*
+  Input: ['hello', 'world', 'javascript', 'map']
+  Output: ['HELLO', 'WORLD', 'JAVASCRIPT', 'MAP']
+*/
