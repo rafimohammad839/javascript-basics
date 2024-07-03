@@ -164,3 +164,13 @@ const result3 = nums.map((val, idx) => val - 1); // Under the hood, it understan
 
 console.log(result3); //  [1, 7, 18, 11, 12] transformed values
 
+
+// Question #2: Create an arrow function that accepts an array of strings and returns a resulting array containing values from the original array that are transformed.
+// Input: strs = ["Rafi", "John", "Elyash"]
+// Output: ["Hello Rafi", "Hello John", "Hello Elyash"]
+
+
+
+
+const strs = ["Rafi", "John", "Elyash"]
+console.log(greetEveryone(strs));
