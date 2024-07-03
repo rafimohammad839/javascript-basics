@@ -73,51 +73,94 @@
   11 -> November : Fall
 */
 
-function getSeason(month) {
-  
+// function getSeason(month) {
+//   switch (month) {
+//     case 12:
+//       console.log("December : Winter");
+//       break;
+//     case 1:
+//       console.log("January : Winter");
+//       break;
+//     case 2:
+//       console.log("February : Winter");
+//       break;
+//     case 3:
+//       console.log("March : Spring");
+//       break;
+//     case 4:
+//       console.log("April : Spring");
+//       break;
+//     case 5:
+//       console.log("May : Spring");
+//       break;
+//     case 6:
+//       console.log("June : Summer");
+//       break;
+//     case 7:
+//       console.log("July : Summer");
+//       break;
+//     case 8:
+//       console.log("August : Summer");
+//       break;
+//     case 9:
+//       console.log("September : Fall");
+//       break;
+//     case 10:
+//       console.log("October : Fall");
+//       break;
+//     case 11:
+//       console.log("November : Fall");
+//       break;
+//     default:
+//       console.log("Invalid Month!");
+//   }
+// }
 
-switch (month) {
-  case 12:
-    console.log("December : Winter");
-    break;
-  case 1:
-    console.log("January : Winter");
-    break;
-  case 2:
-    console.log("February : Winter");
-    break;
-  case 3:
-    console.log("March : Spring");
-    break;
-  case 4:
-    console.log("April : Spring");
-    break;
-  case 5:
-    console.log("May : Spring");
-    break;
-  case 6:
-    console.log("June : Summer");
-    break;
-    case 7:
-    console.log("July : Summer");
-    break;
-  case 8:
-    console.log("August : Summer");
-    break;
-  case 9:
-    console.log("September : Fall");
-    break;
-  case 10:
-    console.log("October : Fall");
-    break;
-    case 11:
-      console.log("November : Fall");
-      break;
-  default:
-    console.log("Invalid Month!");
+// let month = 8; // September
+// getSeason(month); // Output: Fall
+
+// Types of functions
+
+// #1: Function Declaration
+
+/* function functionName() {
+  // Your logic here
+  return "Function Declaration";
 }
 
-}
+console.log(functionName());
+ */
+// #2: Function Expression
+/* const myFunction = function () {
+  // Your logic here
+  return "Function Expression";
+} */
 
-let month = 8; // September
-getSeason(month); // Output: Fall
+// #3: Arrow Function
+/* const newFunction = () => {
+  // Your logic here
+  return "Arrow Function";
+}
+console.log(newFunction());
+*/
+
+// Map in JavaScript. Map is a predefined JS function that is used to transform each value in an array and return a new array with the transformed values.
+
+// Multiplying each value by 2 in the original array
+
+const nums = [2, 8, 19, 12, 13];
+// Passed function is an anonymous function
+const result = nums.map(function Munna(value, index) {
+  return index * 2;
+});
+
+// Passed function is an arrow function
+const result2 = nums.map((value, index) => {
+  return value ** 2;
+});
+
+// Simplifying the arrow function; no return statement if one-liner
+const result3 = nums.map((val, idx) => val - 1); // Under the hood, it understands that one-liner is has a return statement.
+
+console.log(result3); //  [1, 7, 18, 11, 12] transformed values
+
