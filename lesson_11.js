@@ -176,16 +176,16 @@ console.log(functionName());
 // Solution of Question Number #2
 
 
-function transformArray(str){
-  return str.map(function(str){
-    return `Hello ${str}`
-  });
-}
+// function transformArray(str){
+//   return str.map(function(str){
+//     return `Hello ${str}`
+//   });
+// }
 
-  const str = ["Rafi", "john", "Elyash"];
-  const result = transformArray(str);
+//   const str = ["Rafi", "john", "Elyash"];
+//   const result = transformArray(str);
 
-  console.log(result);
+//   console.log(result);
 
 
 // const strs = ["Rafi", "John", "Elyash"]
@@ -239,6 +239,19 @@ console.log(newPeople);
   Input: ['hello', 'world', 'javascript', 'map']
   Output: ['HELLO', 'WORLD', 'JAVASCRIPT', 'MAP']
 */
+
+function upperCase(str){
+  return str.map(function(str){
+    return str.toUpperCase()
+  })
+}
+
+
+const str = ['hello', 'world', 'javascript', 'map'];
+const result = upperCase(str);
+
+console.log(result);
+
 
 // const myObj = {
 //   name: "Justin",
