@@ -173,12 +173,26 @@ console.log(functionName());
 // Input: strs = ["Rafi", "John", "Elyash"]
 // Output: ["Hello Rafi", "Hello John", "Hello Elyash"]
 
+// Solution of Question Number #2
+
+
+function transformArray(str){
+  return str.map(function(str){
+    return `Hello ${str}`
+  });
+}
+
+  const str = ["Rafi", "john", "Elyash"];
+  const result = transformArray(str);
+
+  console.log(result);
+
 
 // const strs = ["Rafi", "John", "Elyash"]
 // console.log(greetEveryone(strs));
 
 // Question #3: Given an array of temperatures in celsius, return a transformed array with temperatures converted into fahrenheit.
-const arr = [0, 12, 30, 29, 16];
+// const arr = [0, 12, 30, 29, 16];
 // Output: [32, 53.6, 86, 84.2, 60.8] : fahrenheit
 // Formula: fahrenheit = (celsius * 9 / 5) + 32
 
@@ -186,13 +200,13 @@ const arr = [0, 12, 30, 29, 16];
 // console.log(fahrenheit);
 
 // const arr (ele, idx)
-function convertToFahrenheit(arr) {
-  const fahrenheit = arr.map((ele, idx) => {
-    return (ele * 9 / 5) + 32;
-  }); 
-  return fahrenheit;
-}
-  console.log(convertToFahrenheit (arr));
+// function convertToFahrenheit(arr) {
+//   const fahrenheit = arr.map((ele, idx) => {
+//     return (ele * 9 / 5) + 32;
+//   }); 
+//   return fahrenheit;
+// }
+//   console.log(convertToFahrenheit (arr));
   
 // Question #4: Write a function that extracts the names from an array of objects representing people.
 /*
@@ -206,8 +220,47 @@ function convertToFahrenheit(arr) {
 
 */
 
+function ext(people){
+  return people.map(function(person){
+    return person.name + " " + person.age
+  });
+}
+
+const people = [
+  { name: 'Alice', age: 22 },
+  { name: 'Bob', age: 17 },
+  { name: 'Charlie', age: 30 }
+];
+const newPeople = ext(people);
+console.log(newPeople);
+
 // Question #5: Write a function to convert all strings in an array to uppercase.
 /*
   Input: ['hello', 'world', 'javascript', 'map']
   Output: ['HELLO', 'WORLD', 'JAVASCRIPT', 'MAP']
 */
+
+// const myObj = {
+//   name: "Justin",
+//   city: "Cape Town",
+//   country: "South Africa"
+// }
+
+// const myObj1 = {
+//   name: "Peter",
+//   city: "Sydney",
+//   country: "Australia"
+// }
+
+// const myObj2 = {
+//   name: "Tiffany",
+//   city: "Austin",
+//   country: "Texas"
+// }
+
+// const arrOfObjs = [myObj, myObj1, myObj2]
+
+// // Output: ["Justin", "Peter", "Tiffany"]
+
+// const names = arrOfObjs.map(obj => obj.name);
+// console.log(names);
