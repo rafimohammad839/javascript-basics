@@ -220,7 +220,7 @@ console.log(functionName());
 
 */
 
-function ext(people){
+/* function ext(people){
   return people.map(function(person){
     return person.name + " " + person.age
   });
@@ -232,7 +232,7 @@ const people = [
   { name: 'Charlie', age: 30 }
 ];
 const newPeople = ext(people);
-console.log(newPeople);
+console.log(newPeople); */
 
 // Question #5: Write a function to convert all strings in an array to uppercase.
 /*
@@ -240,7 +240,7 @@ console.log(newPeople);
   Output: ['HELLO', 'WORLD', 'JAVASCRIPT', 'MAP']
 */
 
-function upperCase(str){
+/* function upperCase(str){
   return str.map(function(str){
     return str.toUpperCase()
   })
@@ -250,7 +250,7 @@ function upperCase(str){
 const str = ['hello', 'world', 'javascript', 'map'];
 const result = upperCase(str);
 
-console.log(result);
+console.log(result); */
 
 
 // const myObj = {
