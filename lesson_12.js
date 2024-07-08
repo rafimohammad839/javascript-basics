@@ -73,9 +73,21 @@ console.log("Tickets that fall within price range of 15000 and 40000: ", filtere
   Question #1: Write a function filterEvenNumbers that takes an array of numbers and returns a new array containing only the even numbers.
 
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  console.log(filterEvenNumbers(numbers)); // [2, 4, 6, 8, 10]
+  console.log(filterEvenNumbers(numbers)); // [2, 4, 6, 8, 10]*/
 
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const filterEvenNumbers = numbers.filter(function(number)
+  
 
+  {
+    return number %2===0;
+  });
+  
+  
+  console.log(filterEvenNumbers);
+
+  
+/*
   Question #2: Write a function filterLongWords that takes an array of strings and a number n, and returns a new array containing only the strings that are longer than n characters.
 
   const words = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"];
