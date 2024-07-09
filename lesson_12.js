@@ -78,11 +78,9 @@ console.log("Tickets that fall within price range of 15000 and 40000: ", filtere
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const filterEvenNumbers = numbers.filter(function(number)
   
-
   {
     return number %2===0;
   });
-  
   
   console.log(filterEvenNumbers);
 
@@ -91,9 +89,20 @@ console.log("Tickets that fall within price range of 15000 and 40000: ", filtere
   Question #2: Write a function filterLongWords that takes an array of strings and a number n, and returns a new array containing only the strings that are longer than n characters.
 
   const words = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"];
-  console.log(filterLongWords(words, 5)); // ["banana", "cherry", "elderberry"]
+  console.log(filterLongWords(words, 5)); // ["banana", "cherry", "elderberry"]*/
+  const words = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"];
 
-  Question #3: Write a function filterByAge that takes an array of objects representing people and a minimum age, and returns a new array containing only the people who are older than the minimum age.
+  const filterdWords = words.filter(function(words, index){
+   return words.length >5; 
+  });
+console.log(filterdWords);
+
+const filterdWords2 = words.filter(function(words, index){
+  return words.startsWith('a');
+});
+console.log(filterdWords2);
+
+  /*Question #3: Write a function filterByAge that takes an array of objects representing people and a minimum age, and returns a new array containing only the people who are older than the minimum age.
 
   const people = [
     { name: "Alice", age: 25 },
